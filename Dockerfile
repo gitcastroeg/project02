@@ -3,8 +3,7 @@ FROM php:8.3-apache
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
-    mysqli \ 
-    && docker-php-ext-install zip pdo pdo_mysql \
+    && docker-php-ext-install zip mysqli pdo pdo_mysql \
     && a2enmod rewrite \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
