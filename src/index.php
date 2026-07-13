@@ -1,9 +1,9 @@
 <?php
 echo "test01";
 $host = "66.113.234.121";
-$user = "comelec";
+$user = "root";
 $password = "Default123!@#";
-$database = "docker";
+$database = "comelec";
 $port = 3306;
 
 $con = new mysqli($host, $user, $password, $database, $port);
