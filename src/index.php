@@ -6,11 +6,11 @@ $password = "Default123!@#";
 $database = docker;
 $port = 3306;
 
-$con = new mysql($host, $user, $password, $database, $port);
+$con = new mysqli($host, $user, $password, $database, $port);
 
 if ($conn->connect_error){
-    die ("Connection failed:" $conn->connect_error);
+    die ("Connection failed:" . $conn->connect_error);
 }
 
-echo "Connection succesful!"
+echo "Connection succesful!";
 ?>
